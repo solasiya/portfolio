@@ -3,7 +3,6 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import tailwindcss from "@tailwindcss/vite";
 import { fileURLToPath } from "url";
-// Remove this if you don't need overlay
 import { vitePluginErrorOverlay } from "@hiogawa/vite-plugin-error-overlay";
 
 const __filename = fileURLToPath(import.meta.url);
@@ -14,6 +13,11 @@ export default defineConfig(({ mode }) => ({
   server: {
     host: "::",
     port: 8080,
+    
+    allowedHosts: [
+      "solomon-gqh0.onrender.com", // Your Render domain
+      // "*"  // (Optional) allow all hosts
+    ],
   },
   plugins: [
     react(),
