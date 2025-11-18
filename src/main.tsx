@@ -1,4 +1,4 @@
-import React, { StrictMode } from "react"; // Explicit React import
+import { StrictMode } from "react"; // Explicit React import
 import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App.tsx";
