@@ -3,7 +3,7 @@ import {
   CardHeader,
   CardTitle,
   CardContent,
-} from "../lightswind/card.tsx";
+} from "../lightswind/card";
 import { Badge } from "../lightswind/badge";
 import { Progress } from "../lightswind/progress";
 import { motion, AnimatePresence } from "framer-motion";
@@ -30,9 +30,7 @@ export default function ProfessionalProfile() {
         whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
         transition={{ duration: 0.6, ease: "easeOut" }}
         viewport={{ once: true }}
-        className="your-child-class"
       >
-        {" "}
         <h3 className="text-3xl font-bold mb-6">Core Skills</h3>
         <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
           <Card>
@@ -106,8 +104,6 @@ export default function ProfessionalProfile() {
           </Card>
         </div>
       </motion.div>
-
-      {/* Rest of your component remains unchanged */}
     </motion.section>
   );
 }

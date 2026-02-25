@@ -6,39 +6,33 @@ export const EducationSection = () => {
   return (
     <motion.section
       id="education"
-      className="space-y-10 py-10 px-6"
-      initial={{ opacity: 0, y: 50, filter: "blur(5px)" }}
-      whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-      transition={{ duration: 0.8, ease: "easeOut" }}
-      viewport={{ once: true, amount: 0.2 }}
+      className="space-y-10 py-10 px-6 min-h-[500px]"
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+      viewport={{ once: true, amount: 0.1 }}
     >
       {/* Education */}
       <div>
         <motion.h3
           className="text-3xl font-bold mb-6"
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
+          transition={{ duration: 0.4 }}
           viewport={{ once: true }}
         >
           Education
         </motion.h3>
 
-        <motion.div
-          className="grid grid-cols-1 md:grid-cols-1 gap-8"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
-          viewport={{ once: true }}
-        >
-          <Card>
+        <div className="grid grid-cols-1 gap-8">
+          <Card bordered>
             <CardHeader>
               <CardTitle>Advanced Diploma in Nature Conservation</CardTitle>
               <p className="text-sm text-muted-foreground">
                 Cape Peninsula University of Technology — 2021 – 2022
               </p>
             </CardHeader>
-            <CardContent className="text-xs text-muted-foreground space-y-2">
+            <CardContent className="text-sm text-muted-foreground space-y-2 pb-6">
               <p>
                 This program builds on the National Diploma to develop managerial, research, and technical skills for careers in natural resource management, research, and environmental policy.
               </p>
@@ -50,14 +44,15 @@ export const EducationSection = () => {
               </ul>
             </CardContent>
           </Card>
-          <Card>
+
+          <Card bordered>
             <CardHeader>
               <CardTitle>National Diploma in Nature Conservation</CardTitle>
               <p className="text-sm text-muted-foreground">
                 Cape Peninsula University of Technology — 2016 – 2018
               </p>
             </CardHeader>
-            <CardContent className="text-xs text-muted-foreground space-y-2">
+            <CardContent className="text-sm text-muted-foreground space-y-2 pb-6">
               <p>
                 This program is designed to train competent nature conservation managers and researchers who contribute to the conservation of biodiversity.
               </p>
@@ -69,14 +64,15 @@ export const EducationSection = () => {
               </ul>
             </CardContent>
           </Card>
-          <Card>
+
+          <Card bordered>
             <CardHeader>
               <CardTitle>GIS in Conservation Mapping (Expert Level)</CardTitle>
               <p className="text-sm text-muted-foreground">
                 Regional Centre For Mapping Of Resources For Development — 2025
               </p>
             </CardHeader>
-            <CardContent className="text-xs text-muted-foreground space-y-2">
+            <CardContent className="text-sm text-muted-foreground space-y-2 pb-6">
               <p>
                 Completion of a four-module course sequence, demonstrating expert-level proficiency in applying Geographic Information Systems (GIS) for complex conservation mapping and spatial analysis.
               </p>
@@ -87,14 +83,15 @@ export const EducationSection = () => {
               </ul>
             </CardContent>
           </Card>
-          <Card>
+
+          <Card bordered>
             <CardHeader>
               <CardTitle>OCI 2025 Certified Developer Professional</CardTitle>
               <p className="text-sm text-muted-foreground">
                 Oracle University — 2025
               </p>
             </CardHeader>
-            <CardContent className="text-xs text-muted-foreground space-y-2">
+            <CardContent className="text-sm text-muted-foreground space-y-2 pb-6">
               <p>
                 This certification validates expertise in designing, coding, testing, and deploying cloud-native applications on Oracle Cloud Infrastructure (OCI).
               </p>
@@ -105,14 +102,15 @@ export const EducationSection = () => {
               </ul>
             </CardContent>
           </Card>
-          <Card>
+
+          <Card bordered>
             <CardHeader>
               <CardTitle>OCI 2025 Certified Foundations Associate</CardTitle>
               <p className="text-sm text-muted-foreground">
                 Oracle University — 2025
               </p>
             </CardHeader>
-            <CardContent className="text-xs text-muted-foreground space-y-2">
+            <CardContent className="text-sm text-muted-foreground space-y-2 pb-6">
               <p>
                 This certification confirms fundamental knowledge of public cloud services, focusing on the core architecture and key principles of Oracle Cloud Infrastructure (OCI).
               </p>
@@ -123,14 +121,15 @@ export const EducationSection = () => {
               </ul>
             </CardContent>
           </Card>
-          <Card>
+
+          <Card bordered>
             <CardHeader>
               <CardTitle>Certificate in Full Stack Development</CardTitle>
               <p className="text-sm text-muted-foreground">
                 FNB App Academy — 2025
               </p>
             </CardHeader>
-            <CardContent className="text-xs text-muted-foreground space-y-2">
+            <CardContent className="text-sm text-muted-foreground space-y-2 pb-6">
               <p>
                 This intensive program focuses on the entire application lifecycle, from user interface design to back-end API development using modern programming languages.
               </p>
@@ -142,14 +141,15 @@ export const EducationSection = () => {
               </ul>
             </CardContent>
           </Card>
-          <Card>
+
+          <Card bordered>
             <CardHeader>
               <CardTitle>Software Development Certification</CardTitle>
               <p className="text-sm text-muted-foreground">
                 Power Learn Project Academy — 2024
               </p>
             </CardHeader>
-            <CardContent className="text-xs text-muted-foreground space-y-2">
+            <CardContent className="text-sm text-muted-foreground space-y-2 pb-6">
               <p>
                 This certification provides a strong foundation in essential software engineering concepts, logic, version control, and data handling.
               </p>
@@ -161,14 +161,15 @@ export const EducationSection = () => {
               </ul>
             </CardContent>
           </Card>
-          <Card>
+
+          <Card bordered>
             <CardHeader>
               <CardTitle>Verified Cyber Threat Management Course</CardTitle>
               <p className="text-sm text-muted-foreground">
                 Cisco Networking Academy — 2024
               </p>
             </CardHeader>
-            <CardContent className="text-xs text-muted-foreground space-y-2">
+            <CardContent className="text-sm text-muted-foreground space-y-2 pb-6">
               <p>
                 This course focuses on evaluating network and systems vulnerabilities, creating structured assessment plans, and developing strategies for incident response and recovery.
               </p>
@@ -179,7 +180,7 @@ export const EducationSection = () => {
               </ul>
             </CardContent>
           </Card>
-        </motion.div>
+        </div>
       </div>
 
       <ProfessionalProfile />

@@ -24,22 +24,20 @@ export const HeroSection = () => {
       >
         <motion.h1
           className="text-4xl font-bold"
-          initial={{ opacity: 0, y: 20, filter: "blur(4px)" }}
+          initial={{ opacity: 0, y: 20 }}
           animate={{
             opacity: 1,
             y: 0,
-            filter: "blur(0px)",
             transition: { duration: 0.8, ease: "easeOut" },
           }}
         >
           Solomon Asiya
           <motion.span
             className="text-sm text-pink-500 font-semibold block"
-            initial={{ opacity: 0, y: 20, filter: "blur(4px)" }}
+            initial={{ opacity: 0, y: 20 }}
             animate={{
               opacity: 1,
               y: 0,
-              filter: "blur(0px)",
               transition: { duration: 0.8, ease: "easeOut" },
             }}
           >
@@ -49,11 +47,10 @@ export const HeroSection = () => {
 
         <motion.h2
           className="text-xl text-muted-foreground mt-1"
-          initial={{ opacity: 0, y: 20, filter: "blur(4px)" }}
+          initial={{ opacity: 0, y: 20 }}
           animate={{
             opacity: 1,
             y: 0,
-            filter: "blur(0px)",
             transition: { duration: 0.8, ease: "easeOut" },
           }}
         >
@@ -62,11 +59,10 @@ export const HeroSection = () => {
 
         <motion.p
           className="mt-4 text-xs text-muted-foreground"
-          initial={{ opacity: 0, y: 20, filter: "blur(4px)" }}
+          initial={{ opacity: 0, y: 20 }}
           animate={{
             opacity: 1,
             y: 0,
-            filter: "blur(0px)",
             transition: { duration: 0.8, ease: "easeOut" },
           }}
         >
@@ -83,11 +79,10 @@ export const HeroSection = () => {
 
         <motion.div
           className="flex flex-wrap justify-center md:justify-start gap-2"
-          initial={{ opacity: 0, y: 20, filter: "blur(4px)" }}
+          initial={{ opacity: 0, y: 20 }}
           animate={{
             opacity: 1,
             y: 0,
-            filter: "blur(0px)",
             transition: { duration: 0.8, ease: "easeOut" },
           }}
         >
@@ -100,11 +95,10 @@ export const HeroSection = () => {
       {/* Right Section */}
       <motion.div
         className="flex-1 flex justify-center p-6"
-        initial={{ opacity: 0, scale: 0.8, filter: "blur(10px)" }}
+        initial={{ opacity: 0, scale: 0.8 }}
         animate={{
           opacity: 1,
           scale: 1,
-          filter: "blur(0px)",
         }}
         transition={{ delay: 0.5, duration: 1.2, ease: "easeOut" }}
       >

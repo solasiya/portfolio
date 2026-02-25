@@ -88,20 +88,20 @@ function App() {
           lg:rounded-3xl backdrop-blur-xl border-gray-100 dark:border-gray-900"
         >
           <div className="z-10">
-            {/* Give IDs to sections */}
-            <div id="home">
+            {/* Give IDs to sections via components */}
+            <div>
               <HeroSection />
             </div>
-            <div id="about">
+            <div>
               <AboutSection />
             </div>
-            <div id="education">
+            <div>
               <EducationSection />
             </div>
-            <div id="career">
+            <div>
               <CareerTimeline />
             </div>
-            <div id="projects">
+            <div>
               <ProjectsSection />
             </div>
           </div>
