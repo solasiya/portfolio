@@ -5,10 +5,10 @@ export const CareerTimeline = () => {
   const careerEvents = [
     {
       year: "August 2025 - Present (Part-time)",
-      title: "Software Developer & Interaction Designer",
+      title: "Software Developer, IT and Technical Support",
       subtitle: "Grasshopper Green Technologies",
       description:
-        "Maintain and monitor Learning Management Systems. Built responsive and interactive marketing websites. Created high-conversion landing pages for academy e-commerce. Developed custom animations that improved user engagement metrics by over 30%.",
+        "I provided comprehensive IT support by troubleshooting hardware, software, and network issues while maintaining core infrastructure like VoIP systems and internal networks. My role involved collaborating with internal teams to identify technical needs, implementing efficiency-boosting software solutions, and assisting in the deployment and testing of internal applications. Additionally, I managed user accounts and system configurations to ensure secure, streamlined operations across the organization.",
       icon: <Globe className="h-4 w-4 mr-2 text-primary" />,
     },
     {

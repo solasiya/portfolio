@@ -67,4 +67,27 @@ export default tseslint.config([
   },
 ])
 ```
-# portfolio
+# Portfolio
+
+## Deployment on Render
+
+This project is configured for easy deployment on **Render** as a **Static Site**.
+
+### Automated Deployment (Recommended)
+1. Push your code to a GitHub/GitLab repository.
+2. Connect your repository to Render.
+3. Render will automatically detect the `render.yaml` file and configure the service for you.
+
+### Manual Configuration
+If you prefer to configure it manually on Render:
+- **Service Type**: Static Site
+- **Build Command**: `npm install && npm run build`
+- **Publish Directory**: `dist`
+- **Routing**: This project includes a `_redirects` file for SPA support. On Render, you should also add a "Rewrite" rule:
+  - **Source**: `/*`
+  - **Destination**: `/index.html`
+  - **Action**: Rewrite
+
+## Development
+- Run `npm run dev` for local development.
+- Run `npm run build` to create a production-ready bundle.
