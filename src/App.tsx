@@ -20,27 +20,23 @@ import { motion, AnimatePresence } from "framer-motion";
 
 function App() {
   const [showDock, setShowDock] = useState(false);
-  const [lastScrollY, setLastScrollY] = useState(0);
 
   // Track scroll direction
   useEffect(() => {
+    let lastY = window.scrollY;
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
-
-      if (currentScrollY > lastScrollY) {
-        // scrolling down -> show Dock
+      if (currentScrollY > lastY && currentScrollY > 50) {
         setShowDock(true);
       } else {
-        // scrolling up -> hide Dock
         setShowDock(false);
       }
-
-      setLastScrollY(currentScrollY);
+      lastY = currentScrollY;
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [lastScrollY]);
+  }, []);
 
   // Helper for smooth scroll
   const scrollToSection = (id: string) => {

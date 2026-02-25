@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "./components/lightswind.css";
 
 @theme {
   --font-sans: "Geist Sans", ui-sans-serif, system-ui, sans-serif;
@@ -38,6 +39,4 @@
     font-family: "Geist Sans", sans-serif;
   }
 }
-
-@import "./components/lightswind.css";
 
