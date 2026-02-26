@@ -20,7 +20,7 @@ export const ProjectsSection = () => {
       subtitle:
         "Kummo Spaza Manager is an inventory management web application designed and developed...",
       date: "2025",
-      link: "https://kummo.co.za/",
+      link: "https://spazamanager.onrender.com/auth",
       image: "https://iili.io/KSRGY5G.jpg",
     },
     {
